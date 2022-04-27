@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+body {
+  /* border: solid; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+.container {
+  background-color: #fff;
+  /* border: solid; */
+  padding: 20px 30px;
+  border-radius: 20px;
+  width: 700px;
+}
+
+.s-text {
+  font-size: 10px;
+  margin: 5px 0;
+  color: hsl(186, 14%, 43%);
+}
+.result-div .s-text {
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+}
+
+.person {
+  font-size: 10px;
+  margin: 0;
+  color: hsl(186, 14%, 43%);
+}
+.select-tip-div {
+  /* border: solid; */
+  margin: 20px 0;
+}
+.select-tip-div button,
+.select-tip-div input {
+  width: 30%;
+  margin: 5px;
+  background-color: hsl(183, 100%, 15%);
+  color: #fff;
+  font-weight: 700;
+}
+.select-tip-div button:hover {
+  width: 30%;
+  margin: 5px;
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+.select-tip-div button.active {
+  background-color: #26c0ab;
+  color: #fff;
+}
+.select-tip-div button::after {
+  content: "%";
+}
+.select-tip-div input {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(186, 14%, 43%);
+  cursor: text;
+}
+.select-tip-div input:hover {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  cursor: text;
+}
+.result-div {
+  background-color: hsl(183, 100%, 15%);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.result-div .amount {
+  /* background-color: hsl(183, 100%, 15%); */
+  color: hsl(172, 67%, 45%);
+  font-weight: 900;
+  font-size: 25px;
+  /* padding: 20px; */
+}
+.result-div .amount::before {
+  content: "$";
+}
+.result-div button {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.make {
+  color: hsl(183, 100%, 15%);
+  color: hsl(186, 14%, 43%);
+  color: hsl(184, 14%, 56%);
+  color: hsl(185, 41%, 84%);
+  color: hsl(189, 41%, 97%);
+  color: hsl(0, 0%, 100%);
+}
+input {
+  text-align: right;
+  padding-left: 30px;
+  background-size: 10px;
+  font-weight: 700;
+}
+.bill-div input {
+  background: url("../../images/icon-dollar.svg") no-repeat left;
+}
+.People input {
+  background: url("../../images/icon-person.svg") no-repeat left;
+}
+.message {
+  font-size: 10px;
+  color: hsl(184, 14%, 56%);
+}
+/* #tipAmount, */
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+  }
+  .result-div {
+    margin-top: 20px;
+  }
+  .select-tip-div button,
+  .select-tip-div input {
+    width: 40%;
+    margin: 5px auto;
+  }
+}
